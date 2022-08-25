@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="calc-wrapper">
+    <div>
+      <h3 class="title">Calculator</h3>
+      <input class="result" [(ngModel)]="result" (keypress)="typing($event)" />
+    </div>
+    <div class="buttons">
+      <button class="cbtn col" (click)="clearAll()">AC</button>
+      <button class="cbtn col1" (click)="clear()">C</button>
+      <button class="cbtn" (click)="addToResult(1)">1</button>
+      <button class="cbtn" (click)="addToResult(2)">2</button>
+      <button class="cbtn" (click)="addToResult(3)">3</button>
+      <button class="cbtn" (click)="addToResult('+')">+</button>
+      <button class="cbtn" (click)="addToResult(4)">4</button>
+      <button class="cbtn" (click)="addToResult(5)">5</button>
+      <button class="cbtn" (click)="addToResult(6)">6</button>
+      <button class="cbtn" (click)="addToResult('-')">-</button>
+      <button class="cbtn" (click)="addToResult(7)">7</button>
+      <button class="cbtn" (click)="addToResult(8)">8</button>
+      <button class="cbtn" (click)="addToResult(9)">9</button>
+      <button class="cbtn" (click)="addToResult('*')">*</button>
+      <button class="cbtn" (click)="addToResult('%')">%</button>
+      <button class="cbtn" (click)="addToResult('/')">/</button>
+      <button class="cbtn stretch" (click)="equals()">=</button>
+    </div>
+  </div>
+</div>
